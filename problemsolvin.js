@@ -1,9 +1,4 @@
 const prompt = require("prompt-sync")();
-// let n = +prompt("Entrez le nombre d escalier :");
-// function pas(n) {
-//   if (n <= 2) return n;
-//   return pas(n - 1) + pas(n - 2);}
-// console.log("Nombre de façons possibles :", pas(n));
 //Défi 2 :
 // let N = +prompt("entrez un nombre : ");
 // if(N % 3 === 0  && N % 5 === 0){
@@ -19,16 +14,13 @@ const prompt = require("prompt-sync")();
 // let tab1 = [1,4,6,8,9,4,9,6,8]
 // let tab2 = [];
 //  for (let x = 0; x < tab1.length; x++) {
-//     let exist = false;
-//     for (let i = 0; i < tab2.length; i++) {
-//       if (tab1[x] === tab2[i]) {
-//         exist = true;
-//         break;
-//         }}
-//         if (exist == false){
-//             tab2.push(tab1[x])
-//         }
-//   };
+//  let exist = false;
+//  for (let i = 0; i < tab2.length; i++) {
+//  if (tab1[x] === tab2[i]) {
+//  exist = true;
+//  break;}}
+//  if (exist == false){
+//  tab2.push(tab1[x])} };
 // console.log("Tableau sans doublons :",tab2 );
 // Défi 4 :
 // let table = [2, 4, 6, -3, 5, 7] 
@@ -68,21 +60,21 @@ const prompt = require("prompt-sync")();
 //   console.log("False");
 // }
 // Defi 8 :
-// let mot = prompt("Entrer un mot :");
-// let lettres = [];
-// let compter = [];
-// for (let i = 0; i < mot.length; i++) {
-//   let lettre = mot[i];
-//   let trouve = false;
-// for (let j = 0; j < lettres.length; j++) {
-//     if (lettres[j] === lettre) {
-//       compter[j]++; 
-//       trouve = true;
-//       break;}}
-// if (trouve === false) {
-// lettres.push(lettre);
-// compter.push(1);}}
-// for (let i = 0; i < lettres.length; i++) {
-//   console.log(lettres[i] + " : " + compter[i]);
-// }
+let mot = prompt("Entrer un mot :");
+let lettres = [];
+let compter = [];
+for (let i = 0; i < mot.length; i++) {
+  let lettre = mot[i];
+  let trouve = false;
+for (let j = 0; j < lettres.length; j++) {
+    if (lettres[j] === lettre) {
+      compter[j]++; 
+      trouve = true;
+      break;}}
+if (trouve === false) {
+lettres.push(lettre);
+compter.push(1);}}
+for (let i = 0; i < lettres.length; i++) {
+  console.log(lettres[i] + " : " + compter[i]);
+}
 // Defi 9 :
